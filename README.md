@@ -1,85 +1,82 @@
-Hybrid Text Summarizer (LexRank + BART)
+Hybrid Text Summarizer — LexRank + BART (NLP Project)
 
-A web-based text summarization system combining extractive and abstractive NLP techniques to produce high-quality summaries for long-form text. Built with Streamlit, NLTK, LexRank, and BART-Large CNN.
+An advanced text-summarization system that blends extractive and abstractive AI models to generate clear, coherent, and high-quality summaries. Designed with a modern Streamlit interface and powered by state-of-the-art NLP techniques.
 
-Features
+🚀 Key Features
 
-Hybrid Summarization Pipeline using LexRank (extractive) + BART (abstractive) for more accurate and context-aware summaries.
+🔹 Hybrid AI Pipeline: LexRank for extractive summarization + BART-Large CNN for abstractive refinement.
 
-NLP Preprocessing with tokenization, stopword removal, lemmatization, and text normalization using NLTK.
+🔹 Smarter Preprocessing: Tokenization, lemmatization, stopword removal, and text normalization using NLTK.
 
-Tone Control option (Neutral, Formal, News-like, Academic) for generating summaries in the desired writing style.
+🔹 Tone Customization: Choose from Neutral, Formal, News-like, or Academic writing styles.
 
-ROUGE Evaluation Metrics (ROUGE-1, ROUGE-2, ROUGE-L) displayed in a structured table.
+🔹 ROUGE Evaluation: Built-in ROUGE-1, ROUGE-2, and ROUGE-L scoring for quality measurement.
 
-Interactive UI built with Streamlit featuring side-by-side original and summarized text comparison.
+🔹 Interactive UI: Clean Streamlit interface with side-by-side original vs. summary comparison.
 
-Word Count Analysis for both input text and generated summary.
+🔹 Word Count Insights: Automatic word count for both input and generated summary.
 
-Tech Stack
+🧠 Tech Stack
+Category	Tools
+Frontend / UI	Streamlit
+NLP	NLTK, LexRank, HuggingFace Transformers
+Model	BART-Large CNN
+Evaluation	ROUGE Scorer
+Language	Python
+Data	Pandas
+📦 Installation
 
-  Python 3.10+
-  
-  Streamlit
-  
-  NLTK
-  
-  LexRank
-  
-  Transformers (HuggingFace)
-  
-  BART-Large CNN
-  
-  ROUGE Score (rouge-score library)
-  
-  Pandas
+Clone the repository:
 
-Installation
-git clone https://github.com/<your-username>/hybrid-text-summarizer.git
-cd hybrid-text-summarizer
+git clone https://github.com/PiyushPrakhar77/Text-Summarization.git
+cd Text-Summarization
+
+
+Install dependencies:
+
 pip install -r requirements.txt
 
 
-Make sure to install PyTorch based on your system configuration:
+Install PyTorch (based on your system):
 https://pytorch.org/get-started/locally/
 
-Run the App
+▶️ Run the Application
 streamlit run app.py
 
-How It Works
+🔍 How the System Works
 
-User enters the text to summarize.
+User inputs long text into the UI.
 
-Text undergoes NLP preprocessing.
+The system preprocesses text using NLTK.
 
-LexRank generates an extractive base summary.
+LexRank extracts core sentences.
 
-BART-Large CNN converts it into an abstractive summary.
+BART-Large rewrites them into an abstractive, human-like summary.
 
-ROUGE metrics evaluate summary quality.
+ROUGE metrics measure accuracy and relevance.
 
-Final output is displayed in a clean UI with comparison and word count.
+Output appears in a polished side-by-side viewer.
 
-Sample Output
+📊 Output Includes
 
-Extractive summary (LexRank)
+Extractive summary
 
-Abstractive summary (BART)
+Abstractive summary
 
-ROUGE metrics table
+ROUGE precision, recall, and F1 scores
 
 Word count stats
 
-Side-by-side viewer
+Comparison layout
 
-Future Improvements
+🌱 Future Enhancements
 
-Add support for multilingual summarization
+Support for multiple languages
 
-Integrate T5 / Flan-T5 models
+Document upload (PDF, DOCX)
 
-Option to upload documents (PDF, TXT)
+Integration of T5 and GPT-based summarizers
 
-Improve UI with theme customization
+Improved UI themes
 
-Add GPT-based fast summarization mode
+API endpoint for developers
