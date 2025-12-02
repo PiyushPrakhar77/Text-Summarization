@@ -34,7 +34,7 @@ Tech Stack
   
   Pandas
 
-📦 Installation
+Installation
 git clone https://github.com/<your-username>/hybrid-text-summarizer.git
 cd hybrid-text-summarizer
 pip install -r requirements.txt
@@ -43,10 +43,10 @@ pip install -r requirements.txt
 Make sure to install PyTorch based on your system configuration:
 https://pytorch.org/get-started/locally/
 
-▶️ Run the App
+Run the App
 streamlit run app.py
 
-📚 How It Works
+How It Works
 
 User enters the text to summarize.
 
@@ -60,7 +60,7 @@ ROUGE metrics evaluate summary quality.
 
 Final output is displayed in a clean UI with comparison and word count.
 
-📊 Sample Output
+Sample Output
 
 Extractive summary (LexRank)
 
@@ -72,7 +72,7 @@ Word count stats
 
 Side-by-side viewer
 
-📝 Future Improvements
+Future Improvements
 
 Add support for multilingual summarization
 
