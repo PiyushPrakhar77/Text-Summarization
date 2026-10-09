@@ -1,8 +1,8 @@
 Hybrid Text Summarizer — LexRank + BART (NLP Project)
 
-An advanced text-summarization system that blends extractive and abstractive AI models to generate clear, coherent, and high-quality summaries. Designed with a modern Streamlit interface and powered by state-of-the-art NLP techniques.
+  An advanced text-summarization system that blends extractive and abstractive AI models to generate clear, coherent, and high-quality summaries. Designed with a    modern Streamlit interface and powered by state-of-the-art NLP techniques.
 
-🚀 Key Features
+🚀Key Features
 
 🔹 Hybrid AI Pipeline: LexRank for extractive summarization + BART-Large CNN for abstractive refinement.
 
@@ -17,67 +17,45 @@ An advanced text-summarization system that blends extractive and abstractive AI 
 🔹 Word Count Insights: Automatic word count for both input and generated summary.
 
 🧠 Tech Stack
-Category	Tools
-Frontend / UI	Streamlit
-NLP	NLTK, LexRank, HuggingFace Transformers
-Model	BART-Large CNN
-Evaluation	ROUGE Scorer
-Language	Python
-Data	Pandas
+    Category	               Tools
+    Frontend / UI	           Streamlit
+    NLP	                     NLTK, LexRank, HuggingFace Transformers
+    Model	                   BART-Large CNN
+    Evaluation	             ROUGE Scorer
+    Language	               Python
+    Data	                   Pandas
+    
 📦 Installation
 
-Clone the repository:
+  Clone the repository: git clone https://github.com/PiyushPrakhar77/Text-Summarization.git
+  cd Text-Summarization
 
-git clone https://github.com/PiyushPrakhar77/Text-Summarization.git
+Install dependencies: pip install -r requirements.txt
 
-cd Text-Summarization
+Install PyTorch (based on your system): https://pytorch.org/get-started/locally/
 
+**Run the Application:-** streamlit run app.py
 
-Install dependencies:
+**How the System Works**
+  1. User inputs long text into the UI.
+  2. The system preprocesses text using NLTK.
+  3. LexRank extracts core sentences.
+  4. BART-Large rewrites them into an abstractive, human-like summary.
+  5. ROUGE metrics measure accuracy and relevance.  
+  6. Output appears in a polished side-by-side viewer.
+  
 
-pip install -r requirements.txt
+**Output Includes**
+  1. Extractive summary
+  2. Abstractive summary
+  3. ROUGE precision, recall, and F1 scores
+  4. Word count stats
+  5. Comparison layout
+  
 
-
-Install PyTorch (based on your system):
-https://pytorch.org/get-started/locally/
-
-▶️ Run the Application
-streamlit run app.py
-
-🔍 How the System Works
-
-User inputs long text into the UI.
-
-The system preprocesses text using NLTK.
-
-LexRank extracts core sentences.
-
-BART-Large rewrites them into an abstractive, human-like summary.
-
-ROUGE metrics measure accuracy and relevance.
-
-Output appears in a polished side-by-side viewer.
-
-📊 Output Includes
-
-Extractive summary
-
-Abstractive summary
-
-ROUGE precision, recall, and F1 scores
-
-Word count stats
-
-Comparison layout
-
-🌱 Future Enhancements
-
-Support for multiple languages
-
-Document upload (PDF, DOCX)
-
-Integration of T5 and GPT-based summarizers
-
-Improved UI themes
-
-API endpoint for developers
+Future Enhancements:
+  1. Support for multiple languages
+  2. Document upload (PDF, DOCX)
+  3. Integration of T5 and GPT-based summarizers
+  4. Improved UI themes
+  5. API endpoint for developers
